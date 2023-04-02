@@ -53,3 +53,12 @@ class MaxHeightModel(nn.Module):
         x = nn.functional.relu(self.deconv3(x))
         x = self.deconv4(x)
         return x
+    
+
+# Specifying Model Training 
+class Model_Training():
+    def __init__(self) -> None:
+        pass
+
+
+
