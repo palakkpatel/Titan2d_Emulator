@@ -56,9 +56,16 @@ class MaxHeightModel(nn.Module):
     
 
 # Specifying Model Training 
-class Model_Training():
-    def __init__(self) -> None:
-        pass
+if torch.cuda.is_available():
+    dev = "cuda"
+    print("Using CUDA")
+else:
+    dev = "cpu"
+    print("Using CPU")
+
+device = torch.device(dev)
+
+
 
 
 
